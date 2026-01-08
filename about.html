@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Unibox Enterprises | Printer & Copier Solutions</title>
+  <meta name="description" content="Unibox Enterprises is a trusted provider of printers, copiers, and consumables, delivering reliable office printing solutions with expert service and support.">
+
+  <meta name="keywords" content="Unibox Enterprises, printer dealer in Thanjavur,printer shop near me, copier solutions, printer consumables, office printers, toner, drum, spares,authorized printer dealer,laser printer, color printer, A3 printer, A4 printer,Photocopier printer,">
+
+  <meta name="author" content="Unibox Enterprises">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo">
+     <a href="index.html">
+         <img src="assets/logo/unibox-logo.png" alt="Brand Logo">
+      </a>
+     </div>
+    <nav class="nav">
+      <button class="nav__toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+
+    <section class="page__header reveal">
+      <h1>About Unibox Enterprises</h1>
+      <p>We’re a certified multi-brand printer dealership delivering modern hardware and managed print services to teams that can’t afford downtime.</p>
+    </section>
+    <section class="about-section">
+  <div class="about-container">
+
+    <div class="about-header">
+      <h5>Company Overview</h5>
+      <h2>Who We Are</h2>
+      <p class="subtitle">
+        Trusted printing solutions built on experience, expertise, and reliability
+      </p>
+    </div>
+
+    <div class="about-content">
+
+      <!-- IMAGE -->
+      <div class="about-image">
+        <img src="assets/images/ceo1.webp"
+             alt="Printer Service and Sales">
+        <!-- <div class="image-overlay">
+          <h3>20+ Years of Experience</h3>
+          <p>Reliable Printing Solutions</p>
+        </div> -->
+      </div>
+
+      <!-- TEXT -->
+      <div class="about-text">
+        <p>
+          <strong>Unibox Enterprises</strong> is a trusted printers sales and services dealership,
+          delivering reliable and cost-effective printing solutions for businesses of all sizes.
+        </p>
+
+        <p>
+          With years of industry experience, we specialize in printer sales, installation,
+          maintenance, and professional technical support for modern printing equipment.
+        </p>
+
+        <ul class="about-points">
+          <li>✔ 20+ Years of experience in the printing industry</li>
+          <li>✔ Expertise in printer sales, service & support</li>
+          <li>✔ Serving offices, schools & institutions</li>
+          <li>✔ Dedicated after-sales maintenance support</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="mvv-section">
+  <div class="mvv-header">
+    <h5>Our Purpose</h5>
+    <h2 class="partners-heading">Mission, Vision & Values</h2>
+    <p>Driven by quality, powered by trust, focused on long-term success</p>
+  </div>
+
+  <div class="mvv-container">
+    
+    <!-- Mission -->
+    <div class="mvv-card">
+      <div class="icon-circle">🎯</div>
+      <h3>Our Mission</h3>
+      <ul>
+        <li>Deliver high-quality printing solutions</li>
+        <li>Provide reliable after-sales support</li>
+      </ul>
+    </div>
+
+    <!-- Vision -->
+    <div class="mvv-card highlight">
+      <div class="icon-circle">🚀</div>
+      <h3>Our Vision</h3>
+      <ul>
+        <li>Become a leading printing solutions provider</li>
+        <li>Build long-term customer relationships</li>
+      </ul>
+    </div>
+
+    <!-- Values -->
+    <div class="mvv-card">
+      <div class="icon-circle">💎</div>
+      <h3>Our Values</h3>
+      <ul>
+        <li>Quality</li>
+        <li>Trust</li>
+        <li>Customer Satisfaction</li>
+        <li>Transparency</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+    <section class="stats-section" id="stats">
+  <h2 class="stats-title">Trusted by Businesses Across India</h2>
+
+  <div class="stats-container">
+    <div class="stat-card">
+     <h3 class="count" data-target="20" data-suffix="+">0</h3>
+      <p>Years of Experience</p>
+    </div>
+
+    <div class="stat-card">
+      <h3 class="count" data-target="527" data-suffix="+">0</h3>
+      <p>Genuine Clients</p>
+    </div>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".count");
+
+  const easeOutQuad = t => t * (2 - t); // easing function
+
+  function animateCount(el, duration = 2000) {
+    const start = 0;
+    const end = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || "";
+    let startTime = null;
+
+    function update(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const eased = easeOutQuad(progress);
+      el.textContent = Math.floor(eased * (end - start) + start) + suffix;
+      if (progress < 1) {
+        window.requestAnimationFrame(update);
+      }
+    }
+
+    window.requestAnimationFrame(update);
+  }
+
+  // Scroll trigger using IntersectionObserver
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        if (!el.classList.contains("counted")) {
+          animateCount(el);
+          el.classList.add("counted", "animate");
+          setTimeout(() => el.classList.remove("animate"), 800);
+        }
+        obs.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => observer.observe(counter));
+});
+</script>
+
+
+    <div class="stat-card">
+      <h3 class="count" data-target="1045"data-suffix="+">0</h3>
+      <p>Machines Installed</p>
+    </div>
+
+    <div class="stat-card">
+      <h3 class="count" data-target="100" data-suffix="%">0%</h3>
+      <p>Customer Satisfaction</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="reveal">
+     
+
+    <section class="partners reveal">
+      <h2 class="partners-heading">Trusted by Partners</h2>
+      <div class="partners__track">
+   <div class="partners__logo"><img src="assets/logo/konica-minolta.png" alt="Konica Minolta Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/hp.png" alt="HP Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/canon.png" alt="Canon Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/epson.png" alt="Epson Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/brother.png" alt="Brother Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/xerox.png" alt="Xerox Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/kyocera.png" alt="Kyocera Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/sharp.png" alt="Sharp Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/samsung.png" alt="Samsung Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/dell.png" alt="Dell Logo"></div>
+   
+    <!-- Repeat logos if needed -->
+     <div class="partners__logo"><img src="assets/logo/konica-minolta.png" alt="Konica Minolta Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/hp.png" alt="HP Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/canon.png" alt="Canon Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/epson.png" alt="Epson Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/brother.png" alt="Brother Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/xerox.png" alt="Xerox Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/kyocera.png" alt="Kyocera Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/sharp.png" alt="Sharp Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/samsung.png" alt="Samsung Logo"></div>
+    <div class="partners__logo"><img src="assets/logo/dell.png" alt="Dell Logo"></div>
+    
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__grid">
+      <div class="footer-brand">
+         <a href="index.html">
+            <img src="assets/logo/unibox-logo.png" alt="Unibox Enterprises logo" class="footer-logo">
+        </a>
+          
+         <div class="footer-text">
+               <strong>Unibox Enterprises</strong>
+               <p>Unibox Enterprises is a trusted printer dealer providing office printers, copiers, and complete printing solutions including sales, service, AMC, and consumables.
+  Serving businesses with reliable support.</p>
+        </div>
+      </div>
+      <div class="quick_section">
+        <strong>Quick Links</strong>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="products_section">
+        <strong>Our Products</strong>
+        <div class="footer__links">
+          <a href="konica.html">Konica Minolta</a>
+          <a href="kyocera.html">Kyocera</a>
+          <a href="epson.html">Epson</a>
+          <a href="canon.html">Canon</a>
+          <a href="hp.html">HP</a>
+          <a href="sharp.html">Sharp</a>
+        </div>
+      </div>
+      <div class="footer__contact">
+        <strong>Contact</strong>
+        <div class="contact-info">
+            <div class="contact-info">
+            <span><a href="mailto:sales@primeprint.com">✉️ support@uniboxenterprises.com  </a></span>
+            <span><a href="tel:+917708330440">📞 +91 77083 30440</a></span>
+            <span><a href="tel:+918438430203">📞 +91 84384 30203</a></span>
+            <span>Address: 1384/1BVMJ Complex, Thiruvalluvar Nagar, Tholkappiyar Square, Thanjavur-1, Tamilnadu,<br>India - 613001</span>
+       </div>
+       </div>
+      </div>
+      <div class="social_section">
+        <strong class="footer-heading">Social Links</strong>
+        <div class="social_links">
+         <a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener">
+         <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">
+         <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        </div>
+      </div>
+    </div>
+      <div>
+       <p class="copy">
+          <span id="year"></span> © Branzyne. All rights reserved.
+       </p>
+       </div>
+  
+  </footer>
+
+
+ <a class="whatsapp" href="https://wa.me/917708330440" target="_blank" rel="noreferrer noopener">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+</body>
+</html>
+
