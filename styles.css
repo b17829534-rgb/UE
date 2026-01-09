@@ -158,6 +158,7 @@ img {
 
   .nav__links.active {
     display: flex;
+    background: #202a41; 
   }
 
   .nav__links li {
@@ -573,6 +574,7 @@ main {
   }
 
   .video-wrap {
+    background: linear-gradient(135deg, #0b1f4d, #0f2e6f);
     padding: 60px 20px;
   }
 
@@ -602,6 +604,8 @@ main {
   /* About Section */
   .about-section {
     padding: 120px 16px 70px; /* extra top space for sticky header */
+    width: 100%;
+    max-width: 100%;
   }
 
   .about-header {
@@ -626,7 +630,9 @@ main {
   }
 
   .about-image img {
-    height: 260px;
+    height: 200px;
+    object-fit: contain;     /* no crop */
+    object-position: center;
   }
 
   .image-overlay {
@@ -652,6 +658,7 @@ main {
 
   /* Video */
   .video-wrap {
+    background: linear-gradient(135deg, #0b1f4d, #0f2e6f);
     padding: 60px 16px;
   }
 
@@ -3748,6 +3755,9 @@ background: linear-gradient(135deg, #020617, #0f172a);
   .consumable-img {
     width: 180px;
     height: 160px;
+    display: block;                 /* required */
+    margin: 0 auto 16px auto !important; /* 🔥 center horizontally */
+    object-fit: contain;
     margin-bottom: 16px;
   }
 
@@ -4326,7 +4336,8 @@ background: linear-gradient(135deg, #020617, #0f172a);
 /* experience */
 /* Section Background & Title */
 .stats-section {
-background: #020617; padding: 6rem 2rem;
+background: #020617; 
+  padding: 6rem 2rem;
   text-align: center;
   overflow: hidden;
 }
