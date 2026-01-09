@@ -2795,7 +2795,7 @@ font-size: 40px;
     position: absolute;
     right: 0;
     top: 120%;
-    background: var(--card);
+    background: var(--card, #202a41);
     border: 1px solid var(--border);
     border-radius: 12px;
     flex-direction: column;
