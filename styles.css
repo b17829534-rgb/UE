@@ -130,13 +130,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
 
   .nav__toggle {
     display: block !important;   /* 🔥 FORCE SHOW */
     margin-left: auto;  
     font-size: 28px;
-    background: none;
+    background: #202a41;
     border: none;
     color:#ffffff;
     cursor: pointer;
@@ -171,7 +172,21 @@ img {
     font-size: 16px;
   }
 }
+@media (max-width: 480px) {
+  .nav {
+    padding: 0 0.5rem;
+  }
 
+  .nav__toggle {
+    font-size: 24px;
+    padding: 6px 10px;
+  }
+
+  .nav__links a {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+}
 /* main secction */
 main {
   padding: 0 0 64px;
@@ -630,7 +645,8 @@ main {
   }
 
   .about-image img {
-    height: 200px;
+    height: 160px;
+    width: 100%;  
     object-fit: contain;     /* no crop */
     object-position: center;
   }
